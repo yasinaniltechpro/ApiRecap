@@ -4,14 +4,14 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.BeforeEach;
 
-public class PetStoreBaseUrl {
+public class ReqresBaseUrl {
 
    protected RequestSpecification spec;
 
    @BeforeEach//JunitJupiter annotation
    public void setUp(){
 
-       spec = new RequestSpecBuilder().setBaseUri("https://petstore.swagger.io/v2").build();
+       spec = new RequestSpecBuilder().setBaseUri("https://reqres.in/api/").build();
 
 
    }
